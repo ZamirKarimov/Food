@@ -68,18 +68,15 @@ li{
 
 
 You will need this rule, too:
-.platter:hover .label{
+.platter:hover{
     visibility:visible;
-    animation: serve 3s forwards;
+    transform: rotate(360deg);
+    height: 400px;
+    width: 400px;
 }
 
-@keyframes serve {
-    from {
-        height: 200px;
-        width: 200px;
-    }
-    to {
-        height: 400px;
-        width: 400px;
-    }
+.platter {
+    transition: height 2s, width 2s, background-image: 2.5, transform 3s;
 }
+
+
