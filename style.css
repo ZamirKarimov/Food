@@ -1,6 +1,3 @@
-/*
-   Use the glasses' classes to apply filters to the glass images
-*/
 .even {
     filter: grayscale(100%);
 }
@@ -33,7 +30,6 @@
 }
 
 
-/* Put your styles ABOVE this line */
 div.platter{
     position:relative;
     background-size:100% 100%;
@@ -68,4 +64,22 @@ ul{
 
 li{
     display:inline-flex; // force list items to be in one line
+}
+
+
+You will need this rule, too:
+.platter:hover .label{
+    visibility:visible;
+    animation: serve 3s forwards;
+}
+
+@keyframes serve {
+    from {
+        height: 200px;
+        width: 200px;
+    }
+    to {
+        height: 400px;
+        width: 400px;
+    }
 }
